@@ -1,0 +1,12 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>root.project.servlets</groupId>
+    <artifactId>servlet</artifactId>
+    <packaging>war</packaging>
+    <name>servlet</name>
+    <parent>
+        <groupId>root.project</groupId>
+        <artifactId>servlets</artifactId>
+        <version>1.0</version>
+    </parent>
+</project>
