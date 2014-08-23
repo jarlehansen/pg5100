@@ -29,7 +29,7 @@ public class CommentsServer implements Comments {
         comments.add("this is really complicated");
         comments.add("return 1; # returns 1");
         comments.add("The following code is commented out");
-        comments.add("sometimes I believe compiler ignores all my comments");
+        comments.add("Sometimes I believe compiler ignores all my comments");
     }
 
     @Override
