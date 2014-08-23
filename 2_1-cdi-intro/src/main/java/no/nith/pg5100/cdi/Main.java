@@ -9,7 +9,9 @@ public class Main {
 
     public static void main(String[] args) {
         WeldContainer container = new Weld().initialize();
-        Instance<MainService> mainService = container.instance().select(MainService.class);
-        mainService.get().main();
+        Instance<MainService> inst = container.instance().select(MainService.class);
+        MainService mainService = inst.get();
+        mainService.main();
+        container.instance().destroy(mainService);
     }
 }
