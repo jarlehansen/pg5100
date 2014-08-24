@@ -9,6 +9,7 @@ public class MainService {
     @Inject
     private SubService subService;
     private final Sub interfaceSubService;
+    private Sub setterSubService;
 
     @PostConstruct
     private void init() {
@@ -25,14 +26,23 @@ public class MainService {
         this.interfaceSubService = interfaceSubService;
     }
 
+    @Inject
+    public void setSubService(Sub setterSubService) {
+        this.setterSubService = setterSubService;
+    }
+
     public void main() {
         System.out.println("MainService");
-        // Injected into the class variable
         // Using the implementation class
+        System.out.println("Injected into class variable");
         subService.sub();
 
-        // Injected into the constructor
-        // Using the interface
+        // Uses interface
+        System.out.println("Injected into constructor");
         interfaceSubService.sub();
+
+        // Uses interface
+        System.out.println("Injected into setter");
+        setterSubService.sub();
     }
 }
