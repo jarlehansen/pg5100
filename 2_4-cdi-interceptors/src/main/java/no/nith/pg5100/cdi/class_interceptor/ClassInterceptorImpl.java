@@ -1,4 +1,4 @@
-package no.nith.pg5100.cdi;
+package no.nith.pg5100.cdi.class_interceptor;
 
 import javax.interceptor.Interceptors;
 
