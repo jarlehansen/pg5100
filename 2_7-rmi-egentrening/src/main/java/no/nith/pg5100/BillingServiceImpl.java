@@ -7,11 +7,9 @@ import java.util.List;
 public class BillingServiceImpl implements BillingService {
     private final List<Invoice> registeredInvoices = new ArrayList<>();
 
-    public void registerInvoice(Invoice... invoices) {
-        for (Invoice invoice : invoices) {
-            registeredInvoices.add(invoice);
-            System.out.println("Invoice registered: " + invoice);
-        }
+    public void registerInvoice(Invoice invoice) {
+        registeredInvoices.add(invoice);
+        System.out.println("Invoice registered: " + invoice);
     }
 
     public List<Invoice> getRegisteredInvoices() {
