@@ -8,11 +8,9 @@ import javax.inject.Inject;
 
 public class Main {
     private final Sender sender;
-    private final Receiver receiver;
 
     @Inject
-    public Main(Receiver receiver, Sender sender) {
-        this.receiver = receiver;
+    public Main(Sender sender) {
         this.sender = sender;
     }
 
