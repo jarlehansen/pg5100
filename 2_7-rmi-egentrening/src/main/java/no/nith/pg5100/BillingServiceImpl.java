@@ -27,6 +27,7 @@ public class BillingServiceImpl implements BillingService {
         return amount;
     }
 
+    // Ved remote kall, start klassen med: -Djava.security.policy=src/main/resources/security.policy
     public static void main(String[] args) {
         // Server impl
     }
