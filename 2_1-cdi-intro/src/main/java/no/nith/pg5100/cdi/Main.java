@@ -11,7 +11,7 @@ public class Main {
         WeldContainer container = new Weld().initialize();
         Instance<MainService> inst = container.instance().select(MainService.class);
         MainService mainService = inst.get();
-        mainService.main();
+        mainService.execute();
         container.instance().destroy(mainService);
     }
 }

@@ -31,7 +31,7 @@ public class MainService {
         this.setterSubService = setterSubService;
     }
 
-    public void main() {
+    public void execute() {
         System.out.println("MainService");
         // Using the implementation class
         System.out.println("Injected into class variable");
