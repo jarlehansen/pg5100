@@ -51,7 +51,7 @@ public class CommentsServer implements Comments {
     }
 
     // Start with system property -Djava.security.policy=src/main/resources/security.policy
-    // A poliocy file specifies which permissions are available for code from various sources, and executing as various principals
+    // A policy file specifies which permissions are available for code from various sources, and executing as various principals
     public static void main(String[] args) throws RemoteException, NamingException, AlreadyBoundException {
         // Protects access to system resources from untrusted downloaded code running within the Java virtual machine.
         // If an RMI program does not install a security manager,
