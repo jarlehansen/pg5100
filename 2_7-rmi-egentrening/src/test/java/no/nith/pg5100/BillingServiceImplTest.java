@@ -24,7 +24,7 @@ public class BillingServiceImplTest {
     @Test
     public void getTotalAmount() {
         billingServiceImpl.registerInvoice(new Invoice(1, "", "", new BigDecimal("50")));
-        billingServiceImpl.registerInvoice(new Invoice(1, "", "", new BigDecimal("50")));
+        billingServiceImpl.registerInvoice(new Invoice(2, "", "", new BigDecimal("50")));
         assertEquals(100, billingServiceImpl.getTotalAmount().intValue());
     }
 }
