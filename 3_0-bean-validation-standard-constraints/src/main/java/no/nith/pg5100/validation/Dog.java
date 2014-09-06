@@ -6,6 +6,7 @@ import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 
 public class Dog {
+    // Field level constraints
     @NotNull
     private String breed;
     @Min(0)
