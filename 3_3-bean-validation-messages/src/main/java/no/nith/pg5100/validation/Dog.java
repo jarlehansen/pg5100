@@ -6,12 +6,16 @@ import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 
 public class Dog {
-    // Field level constraints
     @NotNull(message = "breed cannot be null")
     private String breed;
-    @Min(value = 0, message = "age must be 0 or higher")
+
+    // {value} peker på "value" verdien på @Min
+    // ${validatedValue} peker på input verdien
+    @Min(value = 0, message = "age must be at least {value} or higher, input was ${validatedValue}")
     private int age;
-    @NotEmpty(message = "color cannot be empty")
+
+    // {color} peker på verdi hentet fra ValidationMessages.properties
+    @NotEmpty(message = "{color}")
     private String color;
 
     public Dog(String breed, int age, String color) {
