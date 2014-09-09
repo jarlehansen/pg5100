@@ -33,14 +33,6 @@
                 <groupId>org.wildfly.plugins</groupId>
                 <artifactId>wildfly-maven-plugin</artifactId>
                 <version>1.0.2.Final</version>
-                <!--<configuration>-->
-                    <!--<modules-path>-->
-                        <!--<paths>-->
-                            <!--<path>~/tools/server/wildfly-8.1.0.Final</path>-->
-                            <!--<path>~/tools/server/wildfly-8.1.0.Final/modules/</path>-->
-                        <!--</paths>-->
-                    <!--</modules-path>-->
-                <!--</configuration>-->
             </plugin>
         </plugins>
     </build>
