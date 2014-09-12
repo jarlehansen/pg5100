@@ -1,7 +1,5 @@
 package no.nith.pg5100.validation;
 
-import org.hibernate.validator.constraints.NotEmpty;
-
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 
@@ -11,7 +9,7 @@ public class Dog {
     private String breed;
     @Min(0)
     private int age;
-    @NotEmpty
+    @NotNull
     private String color;
 
     public Dog(String breed, int age, String color) {
