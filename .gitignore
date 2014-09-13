@@ -2,6 +2,7 @@
 
 # Package Files #
 *.jar
+!3_5-bean-validation-egentrening/BeanValidationTester-1.0-SNAPSHOT.jar
 *.war
 *.ear
 
