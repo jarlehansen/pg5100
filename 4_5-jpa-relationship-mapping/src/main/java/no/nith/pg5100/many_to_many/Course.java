@@ -10,7 +10,7 @@ public class Course {
     private String title;
 
 
-    // joinColums, name of column for Course foreign key
+    // joinColumns, name of column for Course foreign key
     // inverseJoinColumns, name of column for Student foreign key
     @ManyToMany
     @JoinTable(name = "student_courses", joinColumns = @JoinColumn(name = "fk_course"), inverseJoinColumns = @JoinColumn(name = "fk_student"))
