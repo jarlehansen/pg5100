@@ -1,0 +1,1 @@
+INSERT INTO Item (dtype, id, description, title, duration, genre, isbn, publisher) VALUES('Book', 1, 'Java EE book', 'Beginning Java EE 7', null, null, '978-1430246268', 'Apress');
