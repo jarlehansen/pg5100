@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+<h:body>
+    <p><span style="font-weight: bold;">Metodekall - testController.getText(): </span>
+        <h:outputText value="#{testController.getText()}"/>
+    </p>
+
+    <p><span style="font-weight: bold;">Property - testController.time: </span>
+        <h:outputText value="#{testController.time}"/>
+    </p>
+
+    <p><span style="font-weight: bold;">Input til metode - testController.createText('XHTML-side'): </span>
+        <h:outputText value="#{testController.createText('XHTML-side')}"/>
+    </p>
+
+    <p><span style="font-weight: bold;">Arithmetic (+ - * / %) 1 + 1: </span>
+        <h:outputText value="#{1 + 1}"/>
+    </p>
+
+    <p><span style="font-weight: bold;">Relational (== != &lt; &gt; &lt;= &gt;=) 1 &gt; 2: </span>
+        <h:outputText value="#{1 > 2}"/>
+    </p>
+
+    <p><span style="font-weight: bold;">Logical (&amp;&amp; || / and or) true and false: </span>
+        <h:outputText value="#{true and false}"/>
+    </p>
+
+</h:body>
+</html>
