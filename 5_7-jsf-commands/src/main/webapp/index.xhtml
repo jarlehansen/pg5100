@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+<h:body>
+    <h:form>
+        <h:outputLabel value="Form + command button "/>
+        <h:commandButton value="Button in form" type="submit" action="#{testController.onSubmit()}"/>
+    </h:form>
+    <br/>
+    <br/>
+
+    <h:outputLabel value="Command button + javascript "/>
+    <h:commandButton value="Button with onClick" type="button" onclick="alert('JavaScript alert')"/>
+    <br/>
+    <br/>
+
+    <h:form>
+        <h:outputLabel value="Reset command button "/>
+        <h:inputText value=""/>
+        <h:commandButton value="Reset button" type="reset"/>
+    </h:form>
+</h:body>
+</html>

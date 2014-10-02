@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core">
+<h:body>
+    <h:outputLabel value="selectBooleanCheckbox "/>
+    <h:selectBooleanCheckbox value="#{testController.checked()}"/>
+    <br/>
+    <br/>
+
+    <h:outputLabel value="selectManyCheckbox "/>
+    <h:selectManyCheckbox>
+        <f:selectItem itemLabel="Test 1"/>
+        <f:selectItem itemLabel="Test 2"/>
+        <f:selectItem itemLabel="Test 3"/>
+        <f:selectItem itemLabel="Test 4"/>
+        <f:selectItem itemLabel="Test 5"/>
+    </h:selectManyCheckbox>
+    <br/>
+    <br/>
+
+    <h:outputLabel value="selectManyListbox "/>
+    <h:selectManyListbox>
+        <f:selectItem itemLabel="Test 1"/>
+        <f:selectItem itemLabel="Test 2"/>
+        <f:selectItem itemLabel="Test 3"/>
+        <f:selectItem itemLabel="Test 4"/>
+        <f:selectItem itemLabel="Test 5"/>
+    </h:selectManyListbox>
+    <br/>
+    <br/>
+
+    <h:outputLabel value="selectManyMenu "/>
+    <h:selectOneMenu>
+        <f:selectItem itemLabel="Test 1"/>
+        <f:selectItem itemLabel="Test 2"/>
+        <f:selectItem itemLabel="Test 3"/>
+        <f:selectItem itemLabel="Test 4"/>
+        <f:selectItem itemLabel="Test 5"/>
+    </h:selectOneMenu>
+    <br/>
+    <br/>
+
+    <h:outputLabel value="selectOneRadio"/>
+    <h:selectOneRadio>
+        <f:selectItem itemLabel="Test 1"/>
+        <f:selectItem itemLabel="Test 2"/>
+        <f:selectItem itemLabel="Test 3"/>
+        <f:selectItem itemLabel="Test 4"/>
+        <f:selectItem itemLabel="Test 5"/>
+    </h:selectOneRadio>
+</h:body>
+</html>
