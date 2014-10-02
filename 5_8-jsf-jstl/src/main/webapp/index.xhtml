@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html" xmlns:c="http://java.sun.com/jstl/core">
+<h:body>
+    <c:set var="myValue" value="10"/>
+
+    <c:forEach var="i" begin="1" end="#{myValue}">
+        <c:choose>
+            <c:when test="#{i % 2 == 0}">
+                <h:outputText value="#{i} = partall"/><br/>
+            </c:when>
+            <c:otherwise>
+                <h:outputText value="#{i} = oddetall"/><br/>
+            </c:otherwise>
+        </c:choose>
+    </c:forEach>
+    <br/>
+
+    <c:if test="#{myValue > 5}">
+        <h:outputText value="myValue variabel er større enn 5"/>
+    </c:if>
+
+</h:body>
+</html>
