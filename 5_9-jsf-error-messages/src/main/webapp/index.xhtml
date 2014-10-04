@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+<h:body>
+    <h:form>
+        <h:messages/>
+        <br/>
+        <h:outputLabel value="Navn: "/>
+        <h:inputText value="#{person.name}"/>
+        <br/>
+        <h:outputLabel value="Alder: "/>
+        <h:inputText value="#{person.age}"/>
+        <br/>
+        <h:outputLabel value="Required: "/>
+        <h:inputText value="Test" required="true"/>
+        <br/>
+        <h:commandButton type="submit" value="Valider"/>
+    </h:form>
+</h:body>
+</html>
