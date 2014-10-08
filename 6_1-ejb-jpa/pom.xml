@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>no.nith.pg5100</groupId>
-    <artifactId>6_0-ejb-intro</artifactId>
+    <artifactId>6_1-ejb-jpa</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
@@ -52,4 +52,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>
