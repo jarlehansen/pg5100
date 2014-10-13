@@ -1,4 +1,4 @@
-package no.nith.pg5100.entity.controller;
+package no.nith.pg5100.controller;
 
 import no.nith.pg5100.entity.Nasjonaldyr;
 
