@@ -17,6 +17,7 @@ public class TestController {
         this.input = input;
     }
 
+    // http://localhost:8080/7_0-jsf-messages-1.0-SNAPSHOT/index.jsf
     public void validateInput() {
         FacesContext context = FacesContext.getCurrentInstance();
 
