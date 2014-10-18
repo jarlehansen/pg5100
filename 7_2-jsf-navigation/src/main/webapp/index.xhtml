@@ -9,7 +9,9 @@
 <h:body>
     <h1>Page 1</h1>
     <h:form>
-        <h:commandButton value="Move to page 2" action="#{testController.nextPage()}"/>
+        <h:commandButton value="Go to page 2" action="#{testController.nextPage()}"/>
     </h:form>
+    <br/>
+    <h:link value="Go to page 3 (faces-config.xml)" outcome="page3.xhtml" />
 </h:body>
 </html>
