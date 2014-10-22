@@ -12,7 +12,3 @@ hs_err_pid*
 .idea
 *.iml
 target
-
-#jpa egentrening
-4_7-jpa-egentrening/src/main/java/no/nith/pg5100/db/entity/*
-4_7-jpa-egentrening/src/test/java/no/nith/pg5100/db/JpaTest.java
