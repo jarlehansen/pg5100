@@ -10,7 +10,7 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
-@Stateful
+@Stateful()
 @StatefulTimeout(unit = TimeUnit.MINUTES, value = 5)
 public class StatefulEjb extends AbstractImpl implements Serializable {
     private static final Logger logger = LoggerFactory.getLogger(StatefulEjb.class);

@@ -1,9 +1,9 @@
 package no.nith.pg5100.controller;
 
 import no.nith.pg5100.ejb.SingletonEjb;
-import no.nith.pg5100.ejb.StatefulEjb;
 import no.nith.pg5100.ejb.StatelessEjb;
 
+import javax.annotation.PreDestroy;
 import javax.faces.bean.ViewScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -12,7 +12,6 @@ import javax.inject.Named;
 @ViewScoped
 public class RequestController {
     private StatelessEjb statelessEjb;
-    private StatefulEjb statefulEjb;
     private SingletonEjb singletonEjb;
 
     @Inject
@@ -21,13 +20,13 @@ public class RequestController {
     }
 
     @Inject
-    public void setStatefulEjb(StatefulEjb statefulEjb) {
-        this.statefulEjb = statefulEjb;
-    }
-
-    @Inject
     public void setSingletonEjb(SingletonEjb singletonEjb) {
         this.singletonEjb = singletonEjb;
+    }
+
+    @PreDestroy
+    public void destroy() {
+        System.out.println("Removing controller");
     }
 
     public String stateless() {
@@ -38,7 +37,5 @@ public class RequestController {
         return singletonEjb.getText();
     }
 
-    public String stateful() {
-        return statefulEjb.getText();
-    }
+
 }
