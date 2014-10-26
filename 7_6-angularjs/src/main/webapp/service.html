@@ -1,0 +1,18 @@
+<!DOCTYPE>
+<html ng-app="testApp">
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS</title>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+    <script src="js/TestService.js"></script>
+    <script src="js/TestController.js"></script>
+</head>
+<body>
+<div ng-controller="TestController">
+    <b>Navn:</b>
+    {{ name='Ola Nordmann' }}
+    {{ greetingService() }}
+</div>
+<a href="index.html">Tilbake</a>
+</body>
+</html>

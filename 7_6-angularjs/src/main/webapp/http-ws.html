@@ -1,0 +1,21 @@
+<!DOCTYPE>
+<html ng-app="testApp">
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS</title>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+    <script src="js/TestService.js"></script>
+    <script src="js/TestController.js"></script>
+</head>
+<body>
+<div ng-controller="TestController">
+    <b>Tittel: </b>
+    {{ result }}
+    <br/>
+    <br/>
+    <button ng-click="getBook()">Call book service</button>
+</div>
+<br/>
+<a href="index.html">Tilbake</a>
+</body>
+</html>
