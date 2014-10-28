@@ -8,14 +8,32 @@
     <h:outputScript library="primefaces" name="jquery/jquery.js"/>
 </h:head>
 <h:body>
-    <h3>Editor</h3>
-    <p:editor width="500"/>
+    <h3>Menu bar</h3>
+    <p:menubar>
+        <p:menuitem value="Link 1" url="#"/>
+        <p:menuitem value="Link 2" url="#"/>
+    </p:menubar>
     <br/>
+    <hr/>
     <br/>
-
     <h3>AutoComplete</h3>
     <h:form>
         <p:autoComplete value="#{testController.text}" completeMethod="#{testController.complete}"/>
+    </h:form>
+    <br/>
+    <hr/>
+    <br/>
+    <h:form>
+        <p:panel header="Panel">
+            <h:panelGrid columns="2" cellpadding="5">
+                <p:outputLabel for="input1" value="Input 1:"/>
+                <p:inputText id="input1" value="#{testController.value1}"/>
+                <p:outputLabel for="input2" value="Input 2:"/>
+                <p:inputText id="input2" value="#{testController.value2}"/>
+            </h:panelGrid>
+            <br/>
+            <p:commandButton value="Submit" actionListener="#{testController.submit}"/>
+        </p:panel>
     </h:form>
 </h:body>
 </html>
