@@ -7,6 +7,6 @@ public class MyService {
     private UserDao userDao;
 
     public void printUsers() {
-        userDao.getUsers();
+        System.out.println(userDao.getUsers());
     }
 }
