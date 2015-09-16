@@ -7,6 +7,10 @@ import javax.enterprise.inject.Instance;
 
 public class Main {
 
+    static {
+        System.setProperty("org.jboss.logging.provider", "slf4j");
+    }
+
     public static void main(String[] args) {
         WeldContainer container = new Weld().initialize();
         Instance<MyService> service = container.instance().select(MyService.class);
