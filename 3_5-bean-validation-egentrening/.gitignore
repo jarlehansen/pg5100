@@ -1,0 +1,5 @@
+.idea
+*.iml
+target
+src/main/java
+!src/main/java/no/westerdals/Main.java
