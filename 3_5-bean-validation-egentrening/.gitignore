@@ -1,3 +1,4 @@
 .idea
 *.iml
 target
+!lib/pg5100-bean-validator-1.0.0.jar
